@@ -1,9 +1,129 @@
-/* Placeholder for styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.2em;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.search-section {
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.search-section h3 {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 8px 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.95em;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #990000;
+}
+
+#result-container {
+    padding: 20px 30px;
+}
+
+.result-label {
+    font-weight: bold;
+    font-size: 1.2em;
     color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}
+
+#result h3 {
+    font-size: 1.3em;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+#result h4 {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+#result p {
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-size: 0.95em;
+}
+
+#result ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+#result li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 1em;
+}
+
+#result li:last-child {
+    border-bottom: none;
 }
